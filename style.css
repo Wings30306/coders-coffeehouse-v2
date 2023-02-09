@@ -31,6 +31,10 @@ header {
 	background-color: black;
 }
 
+li {
+	list-style-type: none;
+}
+
 #drinks {
 	padding: 1rem 0;
 	margin-bottom: 80px;
@@ -106,6 +110,10 @@ img {
 	margin: 2%;
 }
 
+.flex {
+	display: flex;
+}
+
 #coffee-box {
 	background-color: brown;
     position: relative;
@@ -164,26 +172,27 @@ img {
 }
 
 .contact-boxes-container {
-    width: 66%;
-    margin: 0 auto;
+	justify-content: center;
+	height: 270px;
+	margin-top: -20px;
 }
 
 .contact-box-left {
-    width: 250px;
-    margin-top: -20px;
+	flex: 0 250px;
 }
 
 .contact-box-right {
-    width: 250px;
+    /* width: 250px; */
+	flex: 0 250px;
     text-align: right;
-    margin-top: -20px;
+	order: 1;
 }
 
 .contact-box-center {
-    width: 250px;
+	flex: 0 250px;
     height: 250px;
-    margin: 0 auto;
     text-align: center;
+	align-self: flex-end;
 }
 
 th,
