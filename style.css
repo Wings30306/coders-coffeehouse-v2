@@ -134,9 +134,12 @@ img {
     top: -15px;
 }
 
+.horizontal-center {
+	justify-content: center
+}
+
 .vertical-center {
-    position: relative;
-    top: 50%;
+    align-self: center
 }
 
 .one-third-width-column {
