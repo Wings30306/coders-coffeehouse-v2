@@ -33,10 +33,6 @@ header {
 	background-color: black;
 }
 
-li {
-	list-style-type: none;
-}
-
 #drinks {
 	padding: 1rem 0;
 	margin-bottom: 80px;
@@ -96,6 +92,10 @@ nav>a {
 
 nav>a:hover {
 	color: silver;
+}
+
+li {
+	list-style-type: none;
 }
 
 .bold {
