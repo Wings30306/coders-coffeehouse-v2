@@ -6,7 +6,9 @@ body {
 	background-color: whitesmoke;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
 	font-family: 'Merienda One', 'Brush Script MT', cursive;
 }
 
@@ -23,7 +25,7 @@ header {
 	color: beige;
 }
 
-header > p {
+header>p {
 	color: white;
 }
 
@@ -46,11 +48,11 @@ li {
 }
 
 .black-background {
-    background-color: black;
+	background-color: black;
 }
 
 #home {
-    background-image: url('https://codeinstitute.s3-eu-west-1.amazonaws.com/CSSEssentials/coffeehouse.jpg');
+	background-image: url('https://codeinstitute.s3-eu-west-1.amazonaws.com/CSSEssentials/coffeehouse.jpg');
 }
 
 .page-header {
@@ -63,11 +65,11 @@ li {
 }
 
 .text-center {
-    text-align: center;
+	text-align: center;
 }
 
 .text-right {
-    text-align: right;
+	text-align: right;
 }
 
 strong {
@@ -75,7 +77,7 @@ strong {
 }
 
 .text-uppercase {
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .underline {
@@ -86,13 +88,13 @@ nav {
 	padding: 1rem;
 }
 
-nav > a {
+nav>a {
 	text-decoration: none;
 	color: beige;
 	margin: 1rem;
 }
 
-nav > a:hover {
+nav>a:hover {
 	color: silver;
 }
 
@@ -116,9 +118,9 @@ img {
 
 #coffee-box {
 	background-color: brown;
-    position: relative;
-    left: 70px;
-    top: -15px;
+	position: relative;
+	left: 70px;
+	top: -15px;
 }
 
 #tea-box {
@@ -129,27 +131,31 @@ img {
 
 #cold-drinks-box {
 	background-color: chocolate;
-    position: relative;
-    right: 70px;
-    top: -15px;
+	position: relative;
+	right: 70px;
+	top: -15px;
 }
 
 .horizontal-center {
-	justify-content: center
+	justify-content: center;
 }
 
 .vertical-center {
-    align-self: center
+	align-self: center;
+}
+
+.vertical-bottom {
+	align-self: flex-end;
 }
 
 .one-third-width-column {
-    width: 33.33%;
-    display: inline-block;
+	width: 33.33%;
+	display: inline-block;
 }
 
 .two-thirds-width-column {
-    width: 66.66%;
-    display: inline-block;
+	width: 66.66%;
+	display: inline-block;
 }
 
 .reasons-box {
@@ -158,9 +164,9 @@ img {
 	width: 100%;
 	margin: 2%;
 	background-color: chocolate;
-    position: relative;
-    left: 20%;
-    top: 30px;
+	position: relative;
+	left: 20%;
+	top: 30px;
 }
 
 .drinks-box {
@@ -171,36 +177,26 @@ img {
 
 /* padding to allow for fixed footer */
 #contact {
-    margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 
 .contact-boxes-container {
-	justify-content: center;
 	height: 270px;
 	margin-top: -20px;
 }
 
-.contact-box-left {
+.contact-box {
 	flex: 0 250px;
+	height: 250px
 }
 
-.contact-box-right {
-    /* width: 250px; */
-	flex: 0 250px;
-    text-align: right;
+.last {
 	order: 1;
-}
-
-.contact-box-center {
-	flex: 0 250px;
-    height: 250px;
-    text-align: center;
-	align-self: flex-end;
 }
 
 th,
 td {
-    border-bottom: 1px solid black;
+	border-bottom: 1px solid black;
 }
 
 ul {
@@ -208,7 +204,7 @@ ul {
 }
 
 #reasons li {
-    margin-top: 5%;
+	margin-top: 5%;
 }
 
 a:hover {
@@ -220,25 +216,25 @@ footer {
 	background-color: #6f4e37;
 	padding: 1em;
 	text-align: center;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    right: 0;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	right: 0;
 	z-index: 3;
 }
 
-footer > span {
+footer>span {
 	color: silver;
 }
 
-footer > a {
+footer>a {
 	color: beige;
 	text-decoration: none;
 	padding: 0 15px;
 	font-size: 0.8rem;
 }
 
-footer > p {
+footer>p {
 	color: silver;
 }
 
@@ -260,21 +256,21 @@ input[type=submit] {
 input[type=text],
 input[type=email],
 input[list=coffees] {
-    height: 30px;
-    width: 90%;
-    padding-left: 10px;
+	height: 30px;
+	width: 90%;
+	padding-left: 10px;
 	margin: 0 auto;
 }
 
 /* overrides css above */
 input[list=coffees] {
-    width: 45%;
+	width: 45%;
 }
 
 select {
-    height: 30px;
-    width: 100px;
-    padding-left: 10px;
+	height: 30px;
+	width: 100px;
+	padding-left: 10px;
 }
 
 form {
@@ -297,35 +293,35 @@ legend {
 }
 
 label {
-    margin: 10px 15px 5px 0;
+	margin: 10px 15px 5px 0;
 }
 
 .checkboxes-box div {
-    margin-top: 15px;
+	margin-top: 15px;
 }
 
 #reasons li {
-    margin-top: 5%;
+	margin-top: 5%;
 }
 
 #terms {
-    height: 200px;
-    width: 90%;
-    padding: 0.5rem;
-    margin: 1.5rem 0 0 15px;
-    border: 1px solid grey;
-    overflow: scroll;
+	height: 200px;
+	width: 90%;
+	padding: 0.5rem;
+	margin: 1.5rem 0 0 15px;
+	border: 1px solid grey;
+	overflow: scroll;
 }
 
 /* map */
 #map-wrapper {
 
-    height: 300px;
-    margin-bottom: 55px;
+	height: 300px;
+	margin-bottom: 55px;
 }
 
 #map {
-    height: 100%;
-    width: 100%;
-    border: none;
+	height: 100%;
+	width: 100%;
+	border: none;
 }
